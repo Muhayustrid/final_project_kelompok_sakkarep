@@ -9,11 +9,10 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const navigationLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Menu', path: '/menu' },
-    { name: 'Kategori', path: '/category' },
-    { name: 'Profil', path: '/profile' },
-    { name: 'FAQ', path: '/faq' },
+    { name: 'Home', path: '#hero' },
+    { name: 'Menu', path: '#menu' },
+    { name: 'Profil', path: '#profile' },
+    { name: 'FAQ', path: '#faq' },
   ];
 
   const isActivePath = (path: string) => {
