@@ -1,31 +1,73 @@
+'use client';
+
 import Link from 'next/link';
-import { fetchRestaurantProfile } from '@/lib/api';
-
-export default async function Home() {
-  const profile = await fetchRestaurantProfile();
-
+import Category from '@/components/category';
+import MenuPage from '@/components/menu';
+export default function HomePage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-4">{'Restoran Kami'}</h1>
-      <p className="text-xl mb-6">{'Selamat datang di restoran kami!'}</p>
-      
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Link href="/menu" className="bg-blue-500 text-white p-4 rounded hover:bg-blue-600">
-          Lihat Menu
-        </Link>
-        <Link href="/categories" className="bg-green-500 text-white p-4 rounded hover:bg-green-600">
-          Kategori Menu
-        </Link>
-        <Link href="/profile" className="bg-purple-500 text-white p-4 rounded hover:bg-purple-600">
-          Profil Restoran
-        </Link>
-        <Link href="/faq" className="bg-red-500 text-white p-4 rounded hover:bg-red-600">
-          Tanya Jawab
-        </Link>
-        <Link href="/test" className="bg-red-500 text-white p-4 rounded hover:bg-red-600">
-          Tester
-        </Link>
-      </div>
+    <div>
+      {/* Navigasi */}
+      <header id="header" className="header d-flex align-items-center sticky-top">
+        <div className="container d-flex align-items-center justify-content-between">
+          <h1 className="sitename">Yummy<span>.</span></h1>
+          <nav id="navmenu" className="navmenu">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#category">Kategori</a></li>
+              <li><a href="#profile">Profil</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {/* Konten Halaman */}
+      <main>
+        {/* Home Section */}
+        <section id="home" className="section light-background">
+          <div className="container">
+            <h1>Selamat Datang di Restoran Kami</h1>
+            <p>Kami menyediakan makanan terbaik untuk Anda.</p>
+          </div>
+        </section>
+
+        {/* Menu Section */}
+        <section id="menu" className="section">
+          <div className="container">
+            <h2>Menu Kami</h2>
+            <MenuPage/>
+            {/* Daftar menu di sini */}
+          </div>
+        </section>
+
+        {/* Category Section */}
+        <section id="category" className="section light-background">
+          <div className="container">
+            <h2>Kategori Menu</h2>
+            
+            <Category/>
+            {/* Kategori menu di sini */}
+          </div>
+        </section>
+
+        {/* Profile Section */}
+        <section id="profile" className="section">
+          <div className="container">
+            <h2>Profil Restoran</h2>
+            <p>Informasi tentang restoran kami.</p>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="section light-background">
+          <div className="container">
+            <h2>FAQ</h2>
+            <p>Pertanyaan yang sering diajukan.</p>
+            {/* FAQ di sini */}
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
