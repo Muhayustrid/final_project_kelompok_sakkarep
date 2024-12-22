@@ -803,7 +803,7 @@ export default async function Home() {
           <div className="mb-5">
             <iframe
               style={{ width: "100%", height: 400 }}
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.1354960332746!2d110.76433137363892!3d-7.5602020924536975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a145a0e92d00d%3A0xf334170d1351a115!2sJl.%20A.%20Yani%20No.127%2C%20Banaran%2C%20Pabelan%2C%20Kec.%20Kartasura%2C%20Kabupaten%20Sukoharjo%2C%20Jawa%20Tengah%2057169!5e0!3m2!1sid!2sid!4v1734889707581!5m2!1sid!2sid"
               frameBorder={0}
               allowFullScreen={true}
             />
