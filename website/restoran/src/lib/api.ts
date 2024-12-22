@@ -33,9 +33,10 @@ export interface RestaurantProfile {
 }
 
 export interface OpeningHour {
+    id?: number;
     day: string;
-    open_time: string;
-    close_time: string;
+    opening_time: string;
+    closing_time: string;
 }
 
 export interface FAQ {
@@ -43,7 +44,6 @@ export interface FAQ {
     question: string;
     answer: string;
 }
-const response = await fetch(`${API_BASE_URL}/test`);
 
 // Fungsi untuk mengambil data dari API
 export const fetchMenus = async (): Promise<Menu[]> => {
