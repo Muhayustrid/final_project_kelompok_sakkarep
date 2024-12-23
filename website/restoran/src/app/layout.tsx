@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import "@/styles/globals.css";
+import Script from 'next/script'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -83,15 +84,14 @@ export default function RootLayout({
         {/* <div id="preloader" /> */}
 
         {/* <!-- Vendor JS Files --> */}
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+        <Script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
+        <Script src="assets/vendor/aos/aos.js" strategy="afterInteractive" />
+        <Script src="assets/vendor/glightbox/js/glightbox.min.js" strategy="afterInteractive" />
+        <Script src="assets/vendor/purecounter/purecounter_vanilla.js" strategy="afterInteractive" />
+        <Script src="assets/vendor/swiper/swiper-bundle.min.js" strategy="afterInteractive" />
+        <Script src="assets/js/main.js" strategy="afterInteractive" />
         {/* <!-- Main JS File --> */}
-        <script src="assets/js/main.js"></script>
+        {/* <script src="assets/js/main.js"></script> */}
 
       </body>
     </html>

@@ -190,7 +190,7 @@ export default async function Home() {
         </div>
         {/* End Section Title */}
         <div className="container" data-aos="fade-up" data-aos-delay={100}>
-          <div className="swiper init-swiper">
+          <div className="swiper">
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className="testimonial-item">
@@ -349,7 +349,7 @@ export default async function Home() {
       {/* Events Section */}
       <section id="events" className="events section">
         <div className="container-fluid" data-aos="fade-up" data-aos-delay={100}>
-          <div className="swiper init-swiper">
+          <div className="swiper">
             <div className="swiper-wrapper">
               <div
                 className="swiper-slide event-item d-flex flex-column justify-content-end"
@@ -676,7 +676,7 @@ export default async function Home() {
         </div>
         {/* End Section Title */}
         <div className="container" data-aos="fade-up" data-aos-delay={100}>
-          <div className="swiper init-swiper">
+          <div className="swiper">
             <div className="swiper-wrapper align-items-center">
               <div className="swiper-slide">
                 <Link

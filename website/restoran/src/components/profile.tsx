@@ -30,7 +30,7 @@ export default async function profilePage() {
           {/* End Section Title */}
           <div className="container">
             <div className="row gy-4">
-              <div className="col-12" data-aos="fade-up" data-aos-delay={100}>
+              <div className="col-12" data-aos="fade-up" data-aos-delay="100">
                 <div>
                   <p className="fst-italic text-center">
                     {profile.about_us}
@@ -38,12 +38,12 @@ export default async function profilePage() {
                 </div>
               </div>
 
-              <div className="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay={250}>
+              <div className="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="250">
                 <div className="content ps-0 pl-0 text-center">
 
-                  <div className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay={100}>
+                  <div className="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
                     <div className="d-flex flex-row justify-content-center">
-                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay={400}>
+                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay="400">
                         <div>
                           <Link href={profile.email}>
                             <div className='d-flex align-items-center'>
@@ -55,7 +55,7 @@ export default async function profilePage() {
                           {/* <p className='small'>{profile.email}</p> */}
                         </div>
                       </div>
-                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay={300}>
+                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay="300">
                         <div>
                           <Link href={profile.facebook} target="_blank">
                             <div className='d-flex align-items-center'>
@@ -65,7 +65,7 @@ export default async function profilePage() {
                           </Link>
                         </div>
                       </div>
-                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay={200}>
+                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay="200">
                         <div>
                           <Link href={profile.instagram}>
                             <div className='d-flex align-items-center'>
@@ -75,7 +75,7 @@ export default async function profilePage() {
                           </Link>
                         </div>
                       </div>
-                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay={500}>
+                      <div className="info-item d-flex align-items-center mx-2" data-aos="fade-up" data-aos-delay="500">
                         <div>
                           <Link href={profile.twitter}>
                           <div className='d-flex align-items-center'>

@@ -21,7 +21,7 @@ export default async function MenuPage() {
           <ul
             className="nav nav-tabs d-flex justify-content-center"
             data-aos="fade-up"
-            data-aos-delay={100}
+            data-aos-delay="100"
           >
             {categories.map((category, index) => (
               <li className="nav-item" key={category.id}>
@@ -35,7 +35,7 @@ export default async function MenuPage() {
               </li>
             ))}
           </ul>
-          <div className="tab-content" data-aos="fade-up" data-aos-delay={200}>
+          <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
             {categories.map((category, index) => (
               <div
                 key={category.id}
