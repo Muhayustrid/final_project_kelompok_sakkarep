@@ -1,16 +1,14 @@
 # Dokumentasi Tugas 2: Membuat Website Restoran dengan ReactJS
-### Nama Kelompok: \<Tuliskan nama kelompok Anda\>
-### Anggota Kelompok
-### 1. L200XXXXXX Nama Lengkap 1
-### 2. L200XXXXXX Nama Lengkap 2
-### 3. L200XXXXXX Nama Lengkap 3
-### 4. L200XXXXXX Nama Lengkap 4
-### 5. L200XXXXXX Nama Lengkap 5
-### 6. L200XXXXXX Nama Lengkap 6
 
-#### Alamat Website yang dibuat
-- Frontend: \<Tuliskan alamat website Anda\>
-- Backend: \<Jika ada, tuliskan alamat website Anda\>
+## Nama Kelompok: Sak Karep
 
-Silahkan anda tuliskan dokumentasi tugas anda di sini!
+## Anggota Kelompok:
 
+| Nama Anggota                 | NIM         | GitHub Username       | Tugas                                                                         |
+| ----------------------------- | ----------- | --------------------- | ----------------------------------------------------------------------------- |
+| Dava Ilham Muhammad          | L200220105 | @DavaIM105           |      |
+| Fachrizal Irfansyah El Zacky | L200220117 | @     |  |
+| Dzaky Rayssa Buntoro         | L200220120 | @        | |
+| Muhammad Kholis Affandi           | L200220134 | @    | |
+| Muhammad Yusuf Tri Daryanto  | L200220140 | @Muhayustrid   |  |
+| Muhammad Ryan Ardiansyah   | L200220142 | ryy142    |  |
