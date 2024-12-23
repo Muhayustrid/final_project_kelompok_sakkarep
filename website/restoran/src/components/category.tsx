@@ -1,4 +1,3 @@
-'use client';
 import { fetchCategories } from '@/lib/api';
 
 export default async function Category() {
@@ -10,7 +9,6 @@ export default async function Category() {
       {categories.map((category) => (
         <div key={category.id} className="mb-8">
           <div
-            key={category.id}
             className="border rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow"
           >
             <div className="p-2">

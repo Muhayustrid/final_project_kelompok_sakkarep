@@ -1,4 +1,3 @@
-'use client';
 import { fetchRestaurantProfile } from '@/lib/api';
 import Link from 'next/link';
 
@@ -10,9 +9,9 @@ export default async function profilePage() {
       {/* About Section */}
       {profiles.map(profile => (
 
-        <section id="about" className="about section">
+        <section id="about" className="about section"  key={profile.id}>
           {/* Section Title */}
-          <div key={profile.id} className="container section-title pb-24" data-aos="fade-up">
+          <div className="container section-title pb-24" data-aos="fade-up">
             <h2>
               About Us
               <br />

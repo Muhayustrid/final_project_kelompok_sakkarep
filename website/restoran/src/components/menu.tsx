@@ -1,4 +1,3 @@
-'use client';
 import { fetchMenus, fetchCategories } from '@/lib/api';
 import Link from 'next/link';
 

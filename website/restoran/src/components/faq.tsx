@@ -1,4 +1,3 @@
-'use client';
 import { fetchFAQs } from '@/lib/api';
 
 export default async function faqPage() {
@@ -11,7 +10,6 @@ export default async function faqPage() {
       {faqs.map(faq => (
         <div key={faq.id} className="mb-8">
           <div
-            key={faq.id}
             className="border rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow"
           >
             <div className="p-2">
