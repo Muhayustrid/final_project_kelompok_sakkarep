@@ -27,6 +27,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['finalprojectkelompoksakkarep-production.up.railway.app']
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -134,7 +135,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # CORS
+CORS_ORIGIN_ALLOW_ALL = False 
 CORS_ALLOWED_ORIGINS = [
-    "https://restorankelompoksakkarep.vercel.app",
-    "https://finalprojectkelompoksakkarep-production.up.railway.app",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://final-project-kelompok-sakkarep2.vercel.app",
 ]
