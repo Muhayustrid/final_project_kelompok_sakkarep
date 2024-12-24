@@ -1655,3 +1655,27 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+.menu-item .menu-img {
+  height: 200px; 
+  object-fit: cover; 
+  width: 100%; 
+  display: block; 
+  border-radius: 8px;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: center; 
+  text-align: center;
+  height: 100%; 
+}
+.menu-item .ingredients {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

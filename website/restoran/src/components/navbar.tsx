@@ -1,12 +1,21 @@
 'use client';
-import "@/styles/globals.css";
+
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import '@/styles/globals.css';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Toggling mobile menu
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  // Close menu when link is clicked
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   const navigationLinks = [
     { name: 'Home', path: '#hero' },
@@ -17,10 +26,6 @@ const Navbar = () => {
     { name: 'Gallery', path: '#gallery' },
   ];
 
-  const isActivePath = (path: string) => {
-    return pathname === path ? 'active' : '';
-  };
-
   return (
     <header id="header" className="header d-flex align-items-center sticky-top">
       <div className="container position-relative d-flex align-items-center justify-content-between">
@@ -30,51 +35,30 @@ const Navbar = () => {
           <span>.</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav id="navmenu" className={`navmenu ${isOpen ? 'mobile-open' : ''}`}>
-          <ul className="d-flex align-items-center">
-            {navigationLinks.map((link) => (
-              <li key={link.path} className="nav-item">
-                <Link
-                  href={link.path}
-                  className={`nav-link ${isActivePath(link.path)}`}
-                  onClick={() => setIsOpen(false)} // Close mobile menu when clicked
-                >
+        {/* Navigation Menu */}
+        <nav id="navmenu" className={`navmenu ${isMobileMenuOpen ? 'mobile-nav-active' : ''}`}>
+          <ul>
+            {navigationLinks.map((link, index) => (
+              <li key={index}>
+                <Link href={link.path} onClick={closeMobileMenu}>
                   {link.name}
                 </Link>
               </li>
             ))}
           </ul>
-          <i
-            className="mobile-nav-toggle d-xl-none bi bi-list"
-            onClick={() => setIsOpen(!isOpen)}
-          ></i>
         </nav>
 
-        {/* Button */}
+        {/* Mobile Menu Toggle */}
+        <i
+          className={`mobile-nav-toggle d-xl-none ${isMobileMenuOpen ? 'bi bi-x' : 'bi bi-list'}`}
+          onClick={toggleMobileMenu}
+        ></i>
+
+        {/* Call-to-Action Button */}
         <Link href="#book-a-table" className="btn-getstarted">
           Book a Table
         </Link>
       </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="mobile-nav">
-          <ul className="d-flex flex-column">
-            {navigationLinks.map((link) => (
-              <li key={link.path} className="nav-item">
-                <Link
-                  href={link.path}
-                  className={`nav-link ${isActivePath(link.path)}`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </header>
   );
 };

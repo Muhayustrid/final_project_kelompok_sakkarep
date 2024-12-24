@@ -31,7 +31,7 @@ export default function GallerySection() {
       }
     }
     loadData();
-  }, [swiperInstance]);
+  }, []);
 
   useEffect(() => {
     if (items.length === 0) return; 
