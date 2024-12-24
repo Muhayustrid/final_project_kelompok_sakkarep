@@ -4,6 +4,7 @@ import ProfilePage from '@/components/profile';
 import FaqPage from '@/components/faq';
 import TestimonialPage from '@/components/testimonials';
 import GalleryPage from '@/components/GalleryPage';
+import ChefsPage from '@/components/ChefsPage';
 export default async function Home() {
 
   return (
@@ -48,247 +49,24 @@ export default async function Home() {
         </div>
       </section>
       {/* /Hero Section */}
-<section id="menu" className="menu section">
-          <MenuPage/>
+      <section id="menu" className="menu section">
+        <MenuPage />
       </section>
       <section id="profile" className="profile section">
-          <ProfilePage/>
+        <ProfilePage />
       </section>
       <section id="faq" className="faq section">
-          <FaqPage/>
+        <FaqPage />
       </section>
 
       {/* /Stats Section */}
-      <TestimonialPage/>
+      <TestimonialPage />
       {/* Chefs Section */}
-      <section id="chefs" className="chefs section">
-        {/* Section Title */}
-        <div className="container section-title" data-aos="fade-up">
-          <h2>chefs</h2>
-          <p>
-            <span>Our</span>{" "}
-            <span className="description-title">
-              Proffesional Chefs
-              <br />
-            </span>
-          </p>
-        </div>
-        
-        {/* End Section Title */}
-        <div className="container">
-          <div className="row gy-4">
-            <div
-              className="col-lg-4 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay={100}
-            >
-              <div className="team-member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/anggota/ang1.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <Link href="">
-                      <i className="bi bi-twitter-x" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-facebook" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-instagram" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-linkedin" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Dava Ilham Muhammad</h4>
-                  <span>L200220105</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* End Chef Team Member */}
-            <div
-              className="col-lg-4 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay={200}
-            >
-              <div className="team-member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/anggota/ang2.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <Link href="">
-                      <i className="bi bi-twitter-x" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-facebook" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-instagram" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-linkedin" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Fachrizal Irfansyah El Zacky</h4>
-                  <span>L200220117</span>
-                </div>
-              </div>
-            </div>
-            {/* End Chef Team Member */}
-            <div
-              className="col-lg-4 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay={200}
-            >
-              <div className="team-member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/anggota/ang3.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <Link href="">
-                      <i className="bi bi-twitter-x" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-facebook" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-instagram" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-linkedin" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Dzaky Rayssa Buntoro</h4>
-                  <span>L200220120</span>
-                </div>
-              </div>
-            </div>
-            {/* End Chef Team Member */}
-            <div
-              className="col-lg-4 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay={200}
-            >
-              <div className="team-member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/anggota/ang4.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <Link href="">
-                      <i className="bi bi-twitter-x" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-facebook" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-instagram" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-linkedin" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Muhammad Kholis Affandi</h4>
-                  <span>L200220134</span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="col-lg-4 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay={300}
-            >
-              <div className="team-member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/anggota/ang5.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <Link href="">
-                      <i className="bi bi-twitter-x" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-facebook" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-instagram" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-linkedin" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Muhammad Yusuf Tri Daryanto</h4>
-                  <span>L200220140</span>
-                </div>
-              </div>
-            </div>
-            {/* End Chef Team Member */}
-            <div
-              className="col-lg-4 d-flex align-items-stretch"
-              data-aos="fade-up"
-              data-aos-delay={200}
-            >
-              <div className="team-member">
-                <div className="member-img">
-                  <img
-                    src="assets/img/anggota/ang6.jpg"
-                    className="img-fluid"
-                    alt=""
-                  />
-                  <div className="social">
-                    <Link href="">
-                      <i className="bi bi-twitter-x" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-facebook" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-instagram" />
-                    </Link>
-                    <Link href="">
-                      <i className="bi bi-linkedin" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="member-info">
-                  <h4>Muhammad Ryan Ardiansyah</h4>
-                  <span>L200220142</span>
-                </div>
-              </div>
-            </div>
-            {/* End Chef Team Member */}
-          </div>
-        </div>
-      </section>
+      <ChefsPage />
       {/* /Chefs Section */}
-      
+
       {/* Gallery Section */}
-      <GalleryPage/>
+      <GalleryPage />
       {/* /Gallery Section */}
       {/* Contact Section */}
       <section id="contact" className="contact section">

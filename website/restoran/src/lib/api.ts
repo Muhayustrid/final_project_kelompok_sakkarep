@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 // Konfigurasi base URL untuk API Django
-const API_BASE_URL = 'https://finalprojectkelompoksakkarep-production.up.railway.app/api';
 
 // Tipe data untuk berbagai entitas
 export interface Menu {
@@ -60,6 +59,12 @@ export interface GalleryItem {
     image?: string;
 }
 
+export interface Chef {
+    id: number;
+    name: string;
+    role: string;
+    photo?: string;
+}
 
 // Fungsi untuk mengambil data dari API
 export const fetchMenus = async (): Promise<Menu[]> => {
@@ -132,3 +137,12 @@ export const fetchGallery = async (): Promise<GalleryItem[]> => {
     }
 };
 
+export const fetchChefs = async (): Promise<Chef[]> => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/chefs/`);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching chefs:', error);
+        return [];
+    }
+};

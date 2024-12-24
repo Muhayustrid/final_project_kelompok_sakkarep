@@ -24,6 +24,7 @@ from rest_framework.schemas import get_schema_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/testimonials/', include('testimoni.urls')), 
+    path('api/chefs/', include('chefs.urls')), 
     path('api/gallery/', include('gallery.urls')), 
     path('api/menus/', include('menus.urls')),
     path('api/', include('profiles.urls')),

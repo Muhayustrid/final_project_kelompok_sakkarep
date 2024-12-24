@@ -25,7 +25,6 @@ SECRET_KEY = 'django-insecure-9+ndv47%ub&^a4y91mflepyc3je96tit@@6szr356rqbw-98db
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['finalprojectkelompoksakkarep-production.up.railway.app']
 
 
 # Application definition
@@ -45,6 +44,7 @@ INSTALLED_APPS = [
     'profiles.apps.ProfilesConfig',
     'testimoni',
     "gallery",
+    "chefs",
 ]
 
 MIDDLEWARE = [
@@ -138,4 +138,5 @@ CORS_ORIGIN_ALLOW_ALL = True  # hanya digunakan untuk development
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://restorankelompoksakkarep.vercel.app",
 ]
