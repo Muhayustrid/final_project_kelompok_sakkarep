@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Konfigurasi base URL untuk API Django
-const API_BASE_URL = 'https://finalprojectkelompoksakkarep-production.up.railway.app/api';
+const API_BASE_URL = 'https://serversakkarep-production.up.railway.app/api';
 
 // Tipe data untuk berbagai entitas
 export interface Menu {

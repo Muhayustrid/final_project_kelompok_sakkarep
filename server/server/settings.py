@@ -23,9 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9+ndv47%ub&^a4y91mflepyc3je96tit@@6szr356rqbw-98db'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['finalprojectkelompoksakkarep-production.up.railway.app']
+DEBUG = True
+ALLOWED_HOSTS = ['https://serversakkarep-production.up.railway.app',
+                 'https://final-project-sakkarep.vercel.app',
+                 'http://localhost:3000',]
 
 
 # Application definition
@@ -135,9 +136,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # CORS
-CORS_ORIGIN_ALLOW_ALL = False 
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://final-project-kelompok-sakkarep2.vercel.app",
+    "https://final-project-sakkarep.vercel.app",
 ]
