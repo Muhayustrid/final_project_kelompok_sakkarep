@@ -2,5 +2,10 @@
   "dependencies": {
     "@types/swiper": "^5.4.3",
     "swiper": "^11.1.15"
-  }
+  },
+  "scripts": {
+  "build": "next build"
 }
+
+}
+
