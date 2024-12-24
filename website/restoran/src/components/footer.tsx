@@ -43,9 +43,9 @@ const Footer = async () => {
               <ul className="list-unstyled">
                 {openingHours.map(({ day, opening_time, closing_time }, index) => (
                   <li key={index} className="d-flex justify-content-between">
-                    <strong>{day}:</strong>
+                    <strong>{day}</strong>
                     <span>
-                      {formatTime(opening_time)} - {formatTime(closing_time)}
+                      :{formatTime(opening_time)} - {formatTime(closing_time)}
                     </span>
                   </li>
                 ))}

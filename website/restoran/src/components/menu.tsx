@@ -13,7 +13,7 @@ export default async function MenuPage() {
         <div className="container section-title" data-aos="fade-up">
           <p>
             <span>Our</span>{" "}
-            <span className="description-title">Yummy Menu</span>
+            <span className="description-title">Resto Keluarga Solo Menu</span>
           </p>
         </div>
         {/* End Section Title */}
