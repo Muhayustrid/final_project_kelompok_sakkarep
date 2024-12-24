@@ -5,6 +5,7 @@ import FaqPage from '@/components/faq';
 import TestimonialPage from '@/components/testimonials';
 import GalleryPage from '@/components/GalleryPage';
 import ChefsPage from '@/components/ChefsPage';
+
 export default async function Home() {
 
   return (
