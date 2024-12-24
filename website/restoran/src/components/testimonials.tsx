@@ -14,11 +14,11 @@ import 'swiper/css/pagination';
 import { fetchTestimonials, Testimonial } from '@/lib/api';
 
 // Daftarkan modul
-Swiper.use([Autoplay, Pagination]);
+
 
 export default function TestimonialsPage() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
-
+  Swiper.use([Autoplay, Pagination]);
   useEffect(() => {
     async function loadTestimonials() {
       const data = await fetchTestimonials();

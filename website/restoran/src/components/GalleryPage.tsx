@@ -12,11 +12,11 @@ import 'swiper/css/pagination';
 // Fungsi fetchGallery dan tipe data GalleryItem 
 import { fetchGallery, GalleryItem } from '@/lib/api';
 
-// modul Swiper yang digunakan
-Swiper.use([Autoplay, Pagination]);
+
 
 export default function GallerySection() {
   // menyimpan data gallery
+  Swiper.use([Autoplay, Pagination]);
   const [items, setItems] = useState<GalleryItem[]>([]);
   const [swiperInstance, setSwiperInstance] = useState<Swiper | null>(null);
 
@@ -31,7 +31,7 @@ export default function GallerySection() {
       }
     }
     loadData();
-  }, []);
+  }, [swiperInstance]);
 
   useEffect(() => {
     if (items.length === 0) return; 
