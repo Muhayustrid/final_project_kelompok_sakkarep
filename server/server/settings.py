@@ -24,8 +24,8 @@ SECRET_KEY = 'django-insecure-9+ndv47%ub&^a4y91mflepyc3je96tit@@6szr356rqbw-98db
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['https://serversakkarep-production.up.railway.app',
-                 'https://final-project-sakkarep.vercel.app',
+ALLOWED_HOSTS = ['serversakkarep-production.up.railway.app',
+                 'final-project-sakkarep.vercel.app',
                  'http://localhost:3000',]
 
 
@@ -140,5 +140,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://final-project-sakkarep.vercel.app",
+    "final-project-sakkarep.vercel.app",
 ]
