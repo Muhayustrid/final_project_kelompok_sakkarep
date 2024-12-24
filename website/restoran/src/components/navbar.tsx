@@ -13,6 +13,8 @@ const Navbar = () => {
     { name: 'Menu', path: '#menu' },
     { name: 'Profil', path: '#profile' },
     { name: 'FAQ', path: '#faq' },
+    { name: 'Testimoni', path: '#testimonials' },
+    { name: 'Gallery', path: '#gallery' },
   ];
 
   const isActivePath = (path: string) => {
@@ -24,7 +26,7 @@ const Navbar = () => {
       <div className="container position-relative d-flex align-items-center justify-content-between">
         {/* Logo */}
         <Link href="/" className="logo d-flex align-items-center me-auto me-xl-0">
-          <h1 className="sitename">Yummy</h1>
+          <h1 className="sitename">Resto</h1>
           <span>.</span>
         </Link>
 

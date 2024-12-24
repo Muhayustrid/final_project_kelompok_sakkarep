@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     # local apps
     'menus.apps.MenusConfig',
     'profiles.apps.ProfilesConfig',
+    'testimoni',
+    "gallery",
 ]
 
 MIDDLEWARE = [

@@ -22,7 +22,7 @@ export interface Category {
 export interface RestaurantProfile {
     id: number;
     name: string;
-    logo:string;
+    logo: string;
     about_us: string;
     address: string;
     phone: string;
@@ -44,6 +44,22 @@ export interface FAQ {
     question: string;
     answer: string;
 }
+
+export interface Testimonial {
+    id: number;
+    name: string;
+    role: string;
+    comment: string;
+    rating: number;
+    photo?: string;
+}
+
+export interface GalleryItem {
+    id: number;
+    title: string;
+    image?: string;
+}
+
 
 // Fungsi untuk mengambil data dari API
 export const fetchMenus = async (): Promise<Menu[]> => {
@@ -95,3 +111,24 @@ export const fetchFAQs = async (): Promise<FAQ[]> => {
         return [];
     }
 };
+
+export const fetchTestimonials = async (): Promise<Testimonial[]> => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/testimonials/`);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching testimonials:', error);
+        return [];
+    }
+};
+
+export const fetchGallery = async (): Promise<GalleryItem[]> => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/gallery/`);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching gallery:', error);
+        return [];
+    }
+};
+
